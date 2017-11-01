@@ -1,8 +1,5 @@
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss3_font-face_rule */
-@font-face {
-    font-family: Merriweather;
-    src: url(https://fonts.google.com/specimen/Merriweather/);
-}
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
 /* My own */
 body {
@@ -33,8 +30,8 @@ li p {
     text-decoration: none;
     font-style: italic;
     font-weight: 900;
-    font-family: Merriweather;
-    font-size: xx-large;
+    font-family: "PT Serif";
+    font-size: large;
 }
 li a {
     display: block;
@@ -42,7 +39,7 @@ li a {
     padding: 12px 22px;
     text-decoration: none;
     font-style: italic;
-    font-family: Merriweather;
+    font-family: "PT Serif";
     font-size: large;
 }
 
@@ -61,12 +58,13 @@ li a:hover {
 
 
 h1 {
-    font-family: Merriweather;
-    font-style: italic;
+    font-family: "PT Serif";
     font-size: xx-large;
     font-weight: 800;
     color: #554140;
 }
+
+
 
 
 p {
@@ -83,8 +81,18 @@ p {
     background-image: url(../img/layout/pexels-photo-326278.jpeg);
 }
 
-/* https://stackoverflow.com/questions/11525132/css-centred-header-image */
+#fixed {
+    position: fixed;
+}
+#behind {
+    z-index: -1;
+}
+#absolute {
+    position: absolute;
+}
 
+
+/* https://stackoverflow.com/questions/11525132/css-centred-header-image */
 
 .header-a{
     padding: 0px 0px;

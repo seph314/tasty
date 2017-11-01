@@ -1,0 +1,37 @@
+.recipe {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.recipe ul {
+    list-style-type: none;
+    padding: 0;
+    background: url("../img/content/pancakes-maple-syrup-sweet-407041.jpeg");
+
+}
+
+
+.recipe li {
+    display: block;
+    color: #554140;
+    padding: 2px 20px 20px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+    font-family: "PT Serif";
+    font-size: large;
+}
+
+.recipe h1 {
+    padding: 20px 20px;
+}
+
+.recipe h2 {
+    padding: 20px 20px;
+}
+
+#padding {
+    padding-top: 16px;
+}
+

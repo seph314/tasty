@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <link rel="stylesheet" type="text/css" href="css/480.css">
+    <link rel="stylesheet" type="text/css" href="css/recipe.css">
 </head>
 <body>
 
@@ -25,7 +26,7 @@
     <div class="col span_1_of_6">
         <ul class="menu">
             <li><img class="header-a" src="img/layout/logo.png"></li>
-            <li><p>Menu</p></li>
+            <li><h1>Menu</h1></li>
             <li><a href="index.php">Home</a></li>
             <li><a href="calendar.php">Calendar</a></li>
             <li class="dropdown">

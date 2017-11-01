@@ -32,6 +32,16 @@
     display: block;
 }
 
+.menu h1 {
+    font-family: "PT Serif";
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 800;
+    color: #554140;
+    padding: 0px 22px;
+
+}
+
 @media only screen and (max-width: 480px) {
     .menu {
         position: relative;
