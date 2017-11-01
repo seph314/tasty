@@ -2,4 +2,4 @@
 
 ### Applikationer för internet - ID1350
 
-A projekt the helap lern html, css, php och js
+I make this project to help learn html, css, php och js.
