@@ -1,0 +1,96 @@
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss3_font-face_rule */
+@font-face {
+    font-family: Merriweather;
+    src: url(https://fonts.google.com/specimen/Merriweather/);
+}
+
+/* My own */
+body {
+    background-color: #D3C7C0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    background-image: url(../img/layout/bg2.png), url(../img/layout/bg2.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    color: #554140;
+}
+
+/* https://www.w3schools.com/css/css_navbar.asp*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: url("../img/layout/bg3.png");
+    /* background-image: url(../img/layout/bg3.png), url(../img/layout/bg3.png); */
+
+}
+
+li p {
+    display: block;
+    color: #554140;
+    padding: 0px 22px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+    font-family: Merriweather;
+    font-size: xx-large;
+}
+li a {
+    display: block;
+    color: #554140;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: Merriweather;
+    font-size: large;
+}
+
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #8C8281;
+    background-image: url(../img/layout/bg4.png), url(../img/layout/bg4.png);
+    color: white;
+}
+
+.active {
+    background-color: #8C8281;
+    color: white;
+}
+
+
+h1 {
+    font-family: Merriweather;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 800;
+    color: #554140;
+}
+
+
+p {
+    font-family: Merriweather;
+    font-style: normal;
+    font-size: large;
+    color: #554140;
+}
+
+.header-img {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    background-image: url(../img/layout/pexels-photo-326278.jpeg);
+}
+
+/* https://stackoverflow.com/questions/11525132/css-centred-header-image */
+
+
+.header-a{
+    padding: 0px 0px;
+}
+
+.img-circle {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
