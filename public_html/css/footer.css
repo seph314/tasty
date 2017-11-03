@@ -1,0 +1,31 @@
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em;
+    background-color: #efefef;
+    text-align: center;
+    background: url("../img/layout/bg3.png");
+}
+.footer a {
+    color: #554140;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "PT Serif";
+    font-size: medium;
+}
+.footer a:hover {
+    color: #554140;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "PT Serif";
+    font-size: medium;
+    background: url("../img/layout/bg5.png");
+    color: #D3C7C0;
+    padding: 0.5em;
+}
+
+#space{
+    padding: 16em;
+}

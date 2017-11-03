@@ -28,10 +28,9 @@ li p {
     color: #554140;
     padding: 0px 22px;
     text-decoration: none;
-    font-style: italic;
-    font-weight: 900;
+    font-weight: 400;
     font-family: "PT Serif";
-    font-size: large;
+    font-size: medium;
 }
 li a {
     display: block;
@@ -64,6 +63,20 @@ h1 {
     color: #554140;
 }
 
+h2 {
+    font-family: "PT Serif";
+    font-size: x-large;
+    font-weight: 500;
+    color: #554140;
+}
+
+h3 {
+    font-family: "PT Serif";
+    font-size: medium;
+    font-weight: 900;
+    color: #554140;
+}
+
 
 
 
@@ -84,11 +97,20 @@ p {
 #fixed {
     position: fixed;
 }
+#absolute {
+    position: absolute;
+}
+#relative {
+    position: relative;
+}
 #behind {
     z-index: -1;
 }
-#absolute {
-    position: absolute;
+#darker {
+    margin-top: 1em;
+    background-image: url(../img/layout/bg4.png);
+    padding-bottom: 1em;
+    border-radius: 1em;
 }
 
 

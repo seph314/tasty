@@ -60,8 +60,7 @@ require_once(TEMPLATES_PATH . "/header.php");
         <li><img src="img/content/transparent.png">28</li>
         <li><img src="img/content/transparent.png">29</li>
         <li><img src="img/content/transparent.png">30</li>
-
-
+        
     </ul>
 </div>
 

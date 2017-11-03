@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <link rel="stylesheet" type="text/css" href="css/480.css">
     <link rel="stylesheet" type="text/css" href="css/recipe.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
 
