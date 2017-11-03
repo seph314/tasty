@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/480.css">
     <link rel="stylesheet" type="text/css" href="css/recipe.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
 </head>
 <body>
 

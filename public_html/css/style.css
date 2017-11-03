@@ -127,3 +127,12 @@ p {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
+#img-half {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    border-radius: 2em;
+    margin: 0 auto;
+}
