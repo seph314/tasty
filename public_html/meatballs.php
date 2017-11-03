@@ -5,21 +5,23 @@ require_once("../resources/config.php");
 require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
-    <div class="col span_3_of_4" id="relative">
+    <div class="col span_3_of_4" id="relative container">
         <ul class="recipe">
             <li>
-                    <div id="left absolute">
-                        <h1>Meatballs</h1>
-                        <p>Make tasty meatballs with this awesome recipe</p>
-                        <h2>Ingredients (4 persons)</h2>
-                        <p>3 eggs</p>
-                        <p>4 dl flower</p>
-                        <p>8 dl milk</p>
-                        <p>1/2 table spoon baking soda</p>
-                        <p>1 pinch fresh vanilla</p>
-                    </div>
-                    <div id="right">right</div>
-                    <div id="center"></div>
+                <div id="left" absolute">
+                <h1>Meatballs</h1>
+                <p>Make tasty meatballs with this awesome recipe</p>
+                <h2>Ingredients (4 persons)</h2>
+                <p>500g ground beef</p>
+                <p>1 onion</p>
+                <p>1 garlic clove</p>
+                <p>1 egg</p>
+                <p>1dl breadcrumbs</p>
+                <p>a pinch of salt</p>
+                <p>a pinch of pepper</p>
+                <p>1 tablespoon paprika spice mix</p>
+                </div>
+                <div id="right absolute"><img id="img" src="img/content/meatballs-1992354_1920.jpg"></div>
             </li>
         </ul>
     </div>
@@ -28,7 +30,7 @@ require_once(TEMPLATES_PATH . "/header.php");
             <li>
                 <h1>Comments</h1>
                 <div id="darker">
-                    <h3>Comment from Master-chef77 2017-11-03</h3>
+                    <h3>Comment from <strong>Master-chef77</strong> 2017-11-03</h3>
                     <p>This site is just amazing, beautiful and easy to navigate, not to mention the vast volume of delicious recipes! Would recommend 5/7</p>
                 </div>
                 <div id="darker">
@@ -37,9 +39,6 @@ require_once(TEMPLATES_PATH . "/header.php");
                 </div>
             </li>
         </ul>
-    </div>
-    <div>
-        <!-- <img src="img/content/pancakes-maple-syrup-sweet-407041.jpeg"> -->
     </div>
 
 <?php

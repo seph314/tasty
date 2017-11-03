@@ -46,3 +46,9 @@
 #left{float:left;width:50%;}
 #right{float:right;width:50%;}
 #center{margin:0 auto;width:100px;}
+
+#img {
+    padding: 1em;
+    border-radius: 2em;
+    fill: 100%;
+}

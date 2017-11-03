@@ -73,17 +73,20 @@ h2 {
 h3 {
     font-family: "PT Serif";
     font-size: medium;
-    font-weight: 900;
-    color: #554140;
+    font-weight: 200;
+    color: #725342;
 }
 
-
+strong {
+    font-weight: 900;
+}
 
 
 p {
     font-family: Merriweather;
     font-style: normal;
     font-size: large;
+    font-weight: 200;
     color: #554140;
 }
 
