@@ -139,4 +139,3 @@ input[type=button] {width: auto; overflow: visible;}
 /* let's clear some floats */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
-.clearfix { zoom: 1; }

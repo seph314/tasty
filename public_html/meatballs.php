@@ -6,7 +6,7 @@ require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
 
-    <div class="main_content_container" id="relative">
+    <div class="main_content_container">
         <ul class="recipe">
             <li>
                 <h1>Meatballs</h1>
@@ -29,20 +29,20 @@ require_once(TEMPLATES_PATH . "/header.php");
                 <p>Fry them on medium high heat in butter and olive oil until done</p>
             </li>
             <li>
-                <img id="img" src="img/content/meatballs-1992354_1920.jpg">
+                <img alt="Meatballs" class="img" src="img/content/meatballs-1992354_1920.jpg">
             </li>
         </ul>
     </div>
 
-    <div class="main_content_container" id="relative">
+    <div class="main_content_container">
         <ul class="recipe">
             <li>
                 <h1>Comments</h1>
-                <div id="darker">
+                <div class="darker">
                     <h3>Comment from <strong>Master-chef77</strong> 2017-11-03</h3>
                     <p>This site is just amazing, beautiful and easy to navigate, not to mention the vast volume of delicious recipes! Would recommend 5/7</p>
                 </div>
-                <div id="darker">
+                <div class="darker">
                     <h3>Comment from ICookFood 2017-11-01</h3>
                     <p>I would not recommend this site, the ingredients burn't stuck in my frying pan.</p>
                 </div>

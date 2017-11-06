@@ -2,7 +2,8 @@
     width: 100%;
 }
 
-.image {
+
+.hover {
     opacity: 1;
     display: block;
     width: 100%;
@@ -10,6 +11,33 @@
     transition: .5s ease;
     backface-visibility: hidden;
 }
+
+
+
+.hover ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: url("../img/layout/bg3.png");
+}
+
+
+.hover li a {
+    display: block;
+    color: #554140;
+    padding: 12px 0;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "PT Serif";
+    font-size: large;
+}
+
+.hover li a:hover {
+    background: none;
+    color: white;
+}
+
+
 
 .middle {
     transition: .5s ease;
@@ -21,7 +49,7 @@
     -ms-transform: translate(-50%, -50%)
 }
 
-.hover_container:hover .image {
+.hover_container:hover .hover {
     opacity: 0.3;
 }
 
