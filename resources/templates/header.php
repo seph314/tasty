@@ -24,23 +24,24 @@
 <!-- <div style="background-image: url(img/layout/pexels-photo-326278.jpeg); background-size: cover; background-position: center; height: 200px"></div>
 -->
 
-<div class="section group">
-    <div class="col span_1_of_6">
-        <ul class="menu">
-            <li><img class="header-a" src="img/layout/logo.png"></li>
-            <li><h1>Menu</h1></li>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="calendar.php">Calendar</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Recipes</a>
-                <div class="dropdown-content">
-                    <a href="meatballs.php">Meatballs</a>
-                    <a href="pancakes.php">Pancake</a>
-                    <a href="curry.php">Chicken Curry</a>
-                </div>
-            </li>
-            <li><br></li>
-        </ul>
-    </div>
+<div class="left_content_container">
+    <ul class="menu">
+        <li><img src="img/layout/logo.png"></li>
+        <li><h1>Menu</h1></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="calendar.php">Calendar</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Recipes</a>
+            <div class="dropdown-content">
+                <a href="meatballs.php">Meatballs</a>
+                <a href="pancakes.php">Pancake</a>
+                <a href="curry.php">Chicken Curry</a>
+            </div>
+        </li>
+        <li>
+            <a></a>
+        </li>
+    </ul>
+</div>
 
 

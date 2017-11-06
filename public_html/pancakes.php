@@ -4,24 +4,30 @@ require_once("../resources/config.php");
 
 require_once(TEMPLATES_PATH . "/header.php");
 ?>
-    <div class="col span_3_of_4" id="relative container">
+    <div class="main_content_container" id="relativer">
         <ul class="recipe">
             <li>
-                <div id="left" absolute">
                 <h1>Pancakes</h1>
                 <p>Make tasty meatballs with this awesome recipe</p>
                 <h2>Ingredients (4 persons)</h2>
                 <p>3 eggs</p>
-                <p>4 dl flower</p>
+                <p>4 dl flour</p>
                 <p>8 dl milk</p>
                 <p>1/2 table spoon baking soda</p>
                 <p>1 pinch fresh vanilla</p>
+            </li>
+            <li>
+                <h2>Directions</h2>
+                <p>Pour all the flour into a bowl, add the eggs and half of the milk. Blend together until no lumps.</p>
+                <p>Mix in the salt, and baking soda. Then add the rest of the flour, let it be for a while.</p>
+                <p>Fry the pancakes in butter on medium high heat.</p>
+            </li>
+            <li>
+                <img id="img" src="img/content/pancakes-maple-syrup-sweet-407041.jpeg">
+            </li>
+        </ul>
     </div>
-    <div id="right absolute"><img id="img" src="img/content/pancakes-maple-syrup-sweet-407041.jpeg"></div>
-    </li>
-    </ul>
-    </div>
-    <div class="col span_3_of_4" id="absolute">
+    <div class="main_content_container" id="relative">
         <ul class="recipe">
             <li>
                 <h1>Comments</h1>

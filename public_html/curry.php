@@ -5,27 +5,34 @@ require_once("../resources/config.php");
 require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
-    <div class="col span_3_of_4" id="relative container">
+    <div class="main_content_container" id="relative">
         <ul class="recipe">
             <li>
-                <div id="left" absolute">
                 <h1>Chicken Curry</h1>
-                <p>Make tasty meatballs with this awesome recipe</p>
+                <p>Make a tasty curry with this awesome recipe</p>
                 <h2>Ingredients (4 persons)</h2>
-                <p>500g ground beef</p>
+                <p>4 chicken breasts</p>
                 <p>1 onion</p>
                 <p>1 garlic clove</p>
-                <p>1 egg</p>
-                <p>1dl breadcrumbs</p>
+                <p>Curry paste</p>
+                <p>Coriander</p>
                 <p>a pinch of salt</p>
                 <p>a pinch of pepper</p>
-                <p>1 tablespoon paprika spice mix</p>
+            </li>
+            <li>
+                <h2>Directions</h2>
+                <p>Cut the chicken in pieces and fry them together with the chopped onion, in oil, on high heat, until golden.</p>
+                <p>Lower the temperature a bit and add curry paste, let it fry a little more. Add coriander and garlic.</p>
+                <p>Add the cream and let it be at a temperature almost boiling but not quite for half an hour.</p>
+                <p>Season with salt and pepper.</p>
+            </li>
+            <li>
+                <img id="img" src="img/content/curry-390550_1920.jpg">
+            </li>
+        </ul>
     </div>
-    <div id="right absolute"><img id="img" src="img/content/curry-390550_1920.jpg"></div>
-    </li>
-    </ul>
-    </div>
-    <div class="col span_3_of_4" id="absolute">
+
+    <div class="main_content_container" id="relative">
         <ul class="recipe">
             <li>
                 <h1>Comments</h1>

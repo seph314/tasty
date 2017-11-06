@@ -33,12 +33,12 @@
 }
 
 .menu h1 {
-    font-family: "PT Serif";
+    font-family: "PT Serif", Georgia;
     font-style: italic;
     font-size: xx-large;
     font-weight: 800;
     color: #554140;
-    padding: 0px 22px;
+    padding: 0 22px;
 
 }
 
@@ -46,5 +46,6 @@
     .menu {
         position: relative;
         top: 0;
+        margin-right: 1em;
     }
 }

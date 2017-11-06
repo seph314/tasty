@@ -7,9 +7,7 @@ body {
     margin-left: 0;
     margin-top: 0;
     margin-right: 0;
-    background-image: url(../img/layout/bg2.png), url(../img/layout/bg2.png);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
+    background: url("../img/layout/bg2.png");
     color: #554140;
 }
 
@@ -19,8 +17,6 @@ ul {
     margin: 0;
     padding: 0;
     background: url("../img/layout/bg3.png");
-    /* background-image: url(../img/layout/bg3.png), url(../img/layout/bg3.png); */
-
 }
 
 li p {
@@ -46,7 +42,7 @@ li a {
 /* Change the link color on hover */
 li a:hover {
     background-color: #8C8281;
-    background-image: url(../img/layout/bg4.png), url(../img/layout/bg4.png);
+    background: url("../img/layout/bg4.png");
     color: white;
 }
 
@@ -90,6 +86,18 @@ p {
     color: #554140;
 }
 
+.main_content_container {
+    margin-left: 216px;
+    padding-top: 1em;
+    padding-right: 1em;
+    width: auto;
+}
+
+.left_content_container {
+    margin-left: 0;
+    width: 200px;
+}
+
 .header-img {
     background-size: cover;
     background-position: center;
@@ -97,18 +105,23 @@ p {
     background-image: url(../img/layout/pexels-photo-326278.jpeg);
 }
 
+
 #fixed {
     position: fixed;
 }
+
 #absolute {
     position: absolute;
 }
+
 #relative {
     position: relative;
 }
+
 #behind {
     z-index: -1;
 }
+
 #darker {
     margin-top: 1em;
     background-image: url(../img/layout/bg4.png);
@@ -116,16 +129,10 @@ p {
     border-radius: 1em;
 }
 
-
-/* https://stackoverflow.com/questions/11525132/css-centred-header-image */
-
-.header-a{
-    padding: 0px 0px;
-}
-
-.img-circle {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+#img {
+    padding: 1em;
+    border-radius: 2em;
+    fill: 100%;
 }
 
 #img-half {
@@ -135,4 +142,20 @@ p {
     padding: 1em;
     border-radius: 2em;
     margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .main_content_container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 1em;
+        width: 100%;
+    }
+    .left_content_container {
+        margin-left: 0;
+        margin-right: 1em;
+        padding-top: 1em;
+        width: 100%;
+    }
 }

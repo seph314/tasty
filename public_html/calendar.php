@@ -5,7 +5,7 @@ require_once("../resources/config.php");
 require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
-<div class="col">
+<div class="main_content_container">
     <div class="month">
         <ul>
             <li class="prev">&#10094;</li>
@@ -31,7 +31,7 @@ require_once(TEMPLATES_PATH . "/header.php");
         <li><img src="img/content/placeholder.png">1</li>
         <li><img src="img/content/placeholder.png">2</li>
         <li><img src="img/content/placeholder.png">3</li>
-        <li><a id="img-a" href="pancakes.php"><img class="img-circle" src="img/content/pancakes-syrup.jpeg"></a>4</li>
+        <li><a id="img-calendar-a" href="pancakes.php"><img class="img-calendar" src="img/content/pancakes-syrup.jpeg"></a>4</li>
         <li><img src="img/content/placeholder.png">5</li>
         <li><img src="img/content/placeholder.png">6</li>
         <li id="clear-left"><img src="img/content/placeholder.png">7</li>
@@ -44,7 +44,7 @@ require_once(TEMPLATES_PATH . "/header.php");
         <li><img src="img/content/placeholder.png">12</li>
         <li><img src="img/content/placeholder.png">13</li>
         <li><img src="img/content/placeholder.png">14</li>
-        <li><a id="img-a" href="meatballs.php"><img class="img-circle" src="img/content/meatballs.png"></a>15</li>
+        <li><a id="img-calendar-a" href="meatballs.php"><img class="img-calendar" src="img/content/meatballs.png"></a>15</li>
         <li><img src="img/content/placeholder.png">16</li>
         <li><img src="img/content/placeholder.png">17</li>
         <li><img src="img/content/placeholder.png">18</li>

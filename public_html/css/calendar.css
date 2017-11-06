@@ -1,12 +1,11 @@
 
-
 .month {
     margin-top: 0;
     width: 100%;
     padding: 70px 25px;
     background-image: url(../img/layout/bg3.png), url(../img/layout/bg3.png);
     text-align: center;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 1em;
 }
 
 .month ul {
@@ -33,19 +32,19 @@
 .weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color: #ddd;
 }
 
 .weekdays li {
     display: inline-block;
     width: 13.6%;
     text-align: center;
+
 }
 
 .days {
     top: 0;
     padding: 10px 0;
-    background: transparent;
+    text-align: center;
 }
 
 .days li {
@@ -58,7 +57,7 @@
     text-align: center;
     margin-bottom: 6px;
     font-size:12px;
-    background-image: url(../img/layout/bg3.png), url(../img/layout/bg3.png);
+    background-image: url(../img/layout/bg4.png), url(../img/layout/bg4.png);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -76,7 +75,12 @@
     height: auto;
 }
 
-#img-a {
+.img-calendar {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#img-calendar-a {
     padding: 0;
     border: 0;
     margin: 0;

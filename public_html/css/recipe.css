@@ -8,7 +8,6 @@
     list-style-type: none;
     padding: 0;
     background: url("../img/content/pancakes-maple-syrup-sweet-407041.jpeg");
-
 }
 
 
@@ -19,7 +18,7 @@
     text-decoration: none;
     font-style: italic;
     font-weight: 900;
-    font-family: "PT Serif";
+    font-family: "PT Serif", Georgia;
     font-size: large;
 }
 
@@ -38,17 +37,4 @@
 .recipe p {
 }
 
-#padding {
-    padding-top: 16px;
-}
 
-#container{width:100%;}
-#left{float:left;width:50%;}
-#right{float:right;width:50%;}
-#center{margin:0 auto;width:100px;}
-
-#img {
-    padding: 1em;
-    border-radius: 2em;
-    fill: 100%;
-}
