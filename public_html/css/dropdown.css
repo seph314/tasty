@@ -5,13 +5,12 @@
     border-bottom-right-radius: 10px;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
     min-width: 200px;
     z-index: 1;
-    background-image: url(../img/layout/bg5.png), url(../img/layout/bg5.png);
+    background-image: url(../img/layout/bg5.png);
     border-bottom-right-radius: 10px;
 }
 
@@ -24,7 +23,6 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
     border-bottom-right-radius: 10px;
 }
 

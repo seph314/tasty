@@ -25,7 +25,7 @@ li p {
     padding: 0px 22px;
     text-decoration: none;
     font-weight: 400;
-    font-family: "PT Serif";
+    font-family: "PT Serif", Merriweather;
     font-size: medium;
 }
 li a {
@@ -34,7 +34,7 @@ li a {
     padding: 12px 22px;
     text-decoration: none;
     font-style: italic;
-    font-family: "PT Serif";
+    font-family: "PT Serif", Merriweather;
     font-size: large;
 }
 

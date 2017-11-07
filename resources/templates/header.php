@@ -5,14 +5,8 @@
     <title>Tasty Recipes</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/3cols.css">
-    <link rel="stylesheet" type="text/css" href="css/4cols.css">
-    <link rel="stylesheet" type="text/css" href="css/5cols.css">
-    <link rel="stylesheet" type="text/css" href="css/6cols.css">
-    <link rel="stylesheet" type="text/css" href="css/col.css">
     <link rel="stylesheet" type="text/css" href="css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
-    <link rel="stylesheet" type="text/css" href="css/480.css">
     <link rel="stylesheet" type="text/css" href="css/recipe.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/hover.css">
@@ -20,7 +14,6 @@
 <body>
 
 <div class="header-img"></div>
-
 
 <div class="left_content_container">
     <ul class="menu">
