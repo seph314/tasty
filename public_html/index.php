@@ -5,7 +5,6 @@ require_once("../resources/config.php");
 require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
-
     <div class="main_content_container">
         <ul class="recipe hover">
             <li>

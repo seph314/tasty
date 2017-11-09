@@ -6,6 +6,7 @@
     padding: 0.5em;
     text-align: center;
     background: url("../img/layout/bg3.png");
+    box-shadow: 10px 10px 5px 10px #554140;
 }
 .footer a {
     color: #554140;
