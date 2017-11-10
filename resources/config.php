@@ -1,5 +1,4 @@
 <?php
-
 /*
     The important thing to realize is that the config file should be included in every
     page of your project, or at least any page you want access to these settings.
@@ -8,32 +7,7 @@
     you'll only need to update it here.
 */
 
-$config = array(
-    "db" => array(
-        "db1" => array(
-            "dbname" => "database1",
-            "username" => "dbUser",
-            "password" => "pa$$",
-            "host" => "localhost"
-        ),
-        "db2" => array(
-            "dbname" => "database2",
-            "username" => "dbUser",
-            "password" => "pa$$",
-            "host" => "localhost"
-        )
-    ),
-    "urls" => array(
-        "baseUrl" => "http://localhost/~Anders/tasty/public_html/"
-    ),
-    "paths" => array(
-        "resources" => "/resources",
-        "images" => array(
-            "content" => $_SERVER["DOCUMENT_ROOT"] . "/img/content",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/img/layout"
-        )
-    )
-);
+
 
 /*
     I will usually place the following in a bootstrap file or some type of environment
