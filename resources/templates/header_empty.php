@@ -36,9 +36,3 @@
 
     </ul>
 </div>
-
-<?php
-    include("../resources/templates/loggain.php");
-?>
-
-

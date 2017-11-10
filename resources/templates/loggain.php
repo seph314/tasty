@@ -11,6 +11,7 @@
 
                     <button type="submit" class="button">Login</button>
                 </div>
+                <b><a href = "../public_html/signup.php">Create Account</a></b>
             </form>
         </li>
     </ul>

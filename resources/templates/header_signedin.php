@@ -38,7 +38,7 @@
 </div>
 
 <?php
-    include("../resources/templates/loggain.php");
+    include("../resources/templates/loggedin.php");
 ?>
 
 

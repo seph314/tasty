@@ -99,6 +99,7 @@ b {
     padding-top: 1em;
     padding-right: 1em;
     width: auto;
+    min-height: 500px;
 }
 
 .left_content_container {
@@ -109,7 +110,7 @@ b {
 .header-img {
     background-size: cover;
     background-position: center;
-    height: 220px;
+    height: 273px;
     background-image: url(../img/layout/pexels-photo-326278.jpeg);
 }
 

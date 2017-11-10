@@ -3,23 +3,38 @@
 }
 
 .login ul {
+
 }
 
 .login li {
     position: absolute;
     z-index: 2;
     right: 0;
-    top: 160px;
+    top: 0;
     left: 60%;
-    height: 60px;
+    height: auto;
     padding: 0.5em;
     text-align: center;
     background: url("../img/layout/bg3.png");
     box-shadow: 0px 2px 5px 0px #765c5b;
-    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.signup {
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.signup ul {
+}
+
+.signup li {
+    padding: 1em;
 }
 
 .button {
+    position: relative;
     background: url("../img/layout/bg4.png");
     border: none;
     color: white;
@@ -34,6 +49,8 @@
 }
 
 .button:hover {
+    position: relative;
+
     background: url("../img/layout/bg5.png");
     border: none;
     color: white;

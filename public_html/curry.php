@@ -2,7 +2,14 @@
 // load up your config file
 require_once("../resources/config.php");
 
-require_once(TEMPLATES_PATH . "/header.php");
+//checks if you are signed in or not and displays appropriate information
+if(isset($_SESSION['login_user'])){
+    require_once(TEMPLATES_PATH . "/header_signedin.php");
+}
+else{
+    require_once(TEMPLATES_PATH . "/header.php");
+}
+
 ?>
 
     <div class="main_content_container">

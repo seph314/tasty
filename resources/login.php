@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
          * funkar så här långt... $myusername innehåller anders
          */
         $_SESSION['login_user'] = $myusername;
-        header("location: welcome.php");
+        header("location: ../public_html/index.php");
     }else {
         $error = "Your Login Name or Password is invalid";
     }
