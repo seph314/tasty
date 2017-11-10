@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/recipe.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
 
@@ -31,6 +32,25 @@
         </li>
         <li>
             <a></a>
+        </li>
+
+    </ul>
+</div>
+
+<div>
+    <ul class="login">
+        <li>
+            <form action="/action_page.php">
+                <div>
+                    <label><b>Username</b></label>
+                    <b><input type="text" placeholder="Enter Username" name="uname" required></b>
+
+                    <label><b>Password</b></label>
+                    <b><input type="password" placeholder="Enter Password" name="psw" required></b>
+
+                    <button type="submit" class="button">Login</button>
+                </div>
+            </form>
         </li>
     </ul>
 </div>

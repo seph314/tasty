@@ -31,7 +31,7 @@ require_once(TEMPLATES_PATH . "/header.php");
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">1</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">2</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">3</li>
-        <li><a href="pancakes.php"><img class="img-calendar" alt="Go to Pancakes recipe" src="img/content/pancakes-syrup.jpeg"></a>4</li>
+        <li><a href="pancakes.php"><img class="img-calendar grow" alt="Go to Pancakes recipe" src="img/content/pancakes-syrup.jpeg"></a>4</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">5</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">6</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">7</li>
@@ -44,7 +44,7 @@ require_once(TEMPLATES_PATH . "/header.php");
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">12</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">13</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">14</li>
-        <li><a href="meatballs.php"><img class="img-calendar" alt="Go to Meatballs recipe" src="img/content/meatballs.png"></a>15</li>
+        <li><a href="meatballs.php"><img class="img-calendar grow" alt="Go to Meatballs recipe" src="img/content/meatballs.png"></a>15</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">16</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">17</li>
         <li><img alt="Blank placeholder" src="img/content/placeholder.png">18</li>

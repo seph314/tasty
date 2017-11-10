@@ -1,12 +1,12 @@
 .footer {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 0.5em;
     text-align: center;
     background: url("../img/layout/bg3.png");
-    box-shadow: 10px 10px 5px 10px #554140;
+    box-shadow: 10px 10px 5px 10px #765c5b;
 }
 .footer a {
     color: #554140;

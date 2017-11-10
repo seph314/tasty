@@ -1,10 +1,9 @@
 .hover_container {
-    width: 100%;
+    width: auto;
 }
 
 
 .hover {
-    opacity: 1;
     display: block;
     width: 100%;
     height: auto;
@@ -47,10 +46,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
+
 }
 
 .hover_container:hover .hover {
-    opacity: 0.3;
 }
 
 .hover_container:hover .middle {
@@ -63,3 +62,4 @@
     font-size: 16px;
     padding: 16px 32px;
 }
+

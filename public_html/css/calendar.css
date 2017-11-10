@@ -43,7 +43,7 @@
 
 .days {
     top: 0;
-    padding: 10px 0;
+    padding: 10px 2em;
     text-align: left;
 }
 
@@ -75,9 +75,13 @@
 
 
 .img-calendar {
+    z-index: 1;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
+
+
 
 
 /* Add media queries for smaller screens */

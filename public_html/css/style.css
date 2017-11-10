@@ -84,10 +84,18 @@ p {
     font-weight: 200;
     color: #554140;
 }
+b {
+    font-family: Merriweather;
+    font-style: normal;
+    font-size: smaller;
+    font-weight: 200;
+    color: #554140;
+}
 
 .main_content_container {
     position: relative;
     margin-left: 216px;
+    margin-top: 0px;
     padding-top: 1em;
     padding-right: 1em;
     width: auto;
@@ -101,11 +109,24 @@ p {
 .header-img {
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 220px;
     background-image: url(../img/layout/pexels-photo-326278.jpeg);
 }
 
 
+.filler {
+    background: url("../img/layout/bg3.png");
+    position: absolute;
+    z-index: 0;
+    left: 216px;
+    top: 270px;
+    right: 55%;
+    padding: 0.5em;
+    text-align: center;
+    background: url("../img/layout/bg3.png");
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
 
 
 
@@ -132,6 +153,17 @@ p {
     height: 100%;
     width: 100%;
 }
+
+
+.grow {transition: all .2s ease-in-out; }
+
+.grow:hover { transform: scale(3.1); }
+
+.grow_a_little {transition: all .2s ease-in-out; }
+
+.grow_a_little:hover { transform: scale(1.1); }
+
+
 
 @media only screen and (max-width: 480px) {
     .main_content_container {
