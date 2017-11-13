@@ -1,8 +1,8 @@
 <div>
     <ul class="login">
         <li>
-            <h1>User: <?php echo $login_session; ?></h1>
-            <h2><a href = "../resources/logout.php">Sign Out</a></h2>
+            <h2>Logged in: <?php echo $login_session; ?></h2>
+            <p><a href = "../resources/logout.php">Sign Out</a></p>
         </li>
     </ul>
 </div>

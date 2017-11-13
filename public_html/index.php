@@ -1,30 +1,27 @@
 <?php
 // load up your config file
 require_once("../resources/config.php");
-include('../resources/session.php');
+require_once("../resources/session.php");
+
 
 //checks if you are signed in or not and displays appropriate information
-if(isset($_SESSION['login_user'])){
+if (isset($_SESSION['login_user'])) {
     require_once(TEMPLATES_PATH . "/header_signedin.php");
-}
-else{
+} else {
     require_once(TEMPLATES_PATH . "/header.php");
 }
+
 
 ?>
 
     <div class="main_content_container">
-        <ul class="recipe hover">
-            <li>
-                    <h1>Welcome to Tasty Recipes</h1>
-                    <p>This is the place to find delicious dishes from around the world. Wondering what's for dinner?</p><p><strong>Take a look at our Calendar function!</strong></p>
-
-                    <div class="hover_container">
-                    <a class="hover" href="calendar.php"><img class="img" alt="Go to calendar" src="img/content/composit4.png"></a>
-                    <div class="middle">
-                        <div class="text"><a href="calendar.php">Visit Calendar</a></div>
-                    </div>
-                    </div>
+        <ul class="recipe">
+            <li class="nostyle">
+                <h1>Welcome to Tasty Recipes</h1>
+                <p>This is the place to find delicious dishes from around the world. Wondering what's for dinner?</p>
+                <p><strong>Take a look at our Calendar!</strong></p>
+                <a href="calendar.php"><img class="img grow_a_little" alt="Go to calendar"
+                                            src="img/layout/visit_calendar_notext.png"></a>
             </li>
         </ul>
     </div>

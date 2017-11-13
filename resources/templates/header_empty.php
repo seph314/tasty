@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/hover.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/nostyle.css">
+    <link rel="stylesheet" type="text/css" href="css/comment.css">
 </head>
 <body>
 

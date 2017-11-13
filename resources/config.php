@@ -1,4 +1,5 @@
 <?php
+
 /*
     The important thing to realize is that the config file should be included in every
     page of your project, or at least any page you want access to these settings.

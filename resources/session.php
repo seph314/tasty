@@ -1,16 +1,18 @@
 <?php
-include('connect.php');
-session_start();
 
-$user_check = $_SESSION['login_user'];
+    session_start();
+    include('connect.php');
 
-$ses_sql = mysqli_query($db,"select username from member where username = '$user_check' ");
+    $user_check = $_SESSION['login_user'];
 
-$row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
+    $ses_sql = mysqli_query($db, "select username from member where username = '$user_check' ");
 
-$login_session = $row['username'];
+    $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
 
-if(!isset($_SESSION['login_user'])){
-    header("location:login.php");
-}
+    $login_session = $row['username'];
+
+    if (!isset($_SESSION['login_user'])) {
+        header("location:login.php");
+    }
+
 ?>
