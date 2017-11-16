@@ -4,6 +4,7 @@ require_once("../resources/config.php");
 require_once("../resources/session.php");
 
 
+
 //checks if you are signed in or not and displays appropriate information
 if (isset($_SESSION['login_user'])) {
     require_once(TEMPLATES_PATH . "/header_signedin.php");

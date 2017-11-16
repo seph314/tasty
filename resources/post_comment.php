@@ -10,10 +10,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     VALUES ( '$login_session', '$mycomment', '$mydish', '$time')";
 
     if ($db->query($sql) === TRUE) {
-        echo "New comment created";
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
     }
-    $db->close();
 }
 ?>

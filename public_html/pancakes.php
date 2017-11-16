@@ -35,6 +35,7 @@ else{
             </li>
         </ul>
     </div>
+<!--
     <div class="main_content_container">
         <ul class="recipe">
             <li>
@@ -50,8 +51,11 @@ else{
             </li>
         </ul>
     </div>
+-->
 
 
 <?php
+$_SESSION['dish'] = basename(__FILE__, '.php');
+require_once(TEMPLATES_PATH . "/comment.php");
 require_once(TEMPLATES_PATH . "/footer.php");
 ?>

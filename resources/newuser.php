@@ -12,7 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     VALUES ('$myusername', '$mypassword')";
 
     if ($db->query($sql) === TRUE) {
-        echo "New account created";
+        //set the session to the new user and go to index, which will display the new user as logged in
+        $_SESSION['login_user']=$myusername;
+        header("location: ../public_html/index.php");
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
     }

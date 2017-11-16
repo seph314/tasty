@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cookbook version="46">
+    <recipe>
+        <title>Meat(free)balls</title>
+        <ingredient>
+            <li>250g ground soy meat.</li>
+            <li>1 large onion.</li>
+            <li>1 tsp soy sauce.</li>
+            <li>1 tsp black pepper.</li>
+        </ingredient>
+        <recipetext>
+            <li>Finely chop the onion and fry it.</li>
+            <li>Mix all the ingredients in a bowl.</li>
+            <li>Form balls of the mixture and put them in a frying pan.</li>
+            <li>Fry for around 5-10 min depending on size.</li>
+        </recipetext>
+        <imagepath>/~ocean/seminar/public_html/img/content/meatballs.jpg</imagepath>
+    </recipe>
+
+</cookbook>

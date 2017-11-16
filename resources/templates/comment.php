@@ -29,7 +29,7 @@ include("../resources/post_comment.php");
             <form  method='post' action="" onsubmit="return post();">
                 <textarea class="comment" name="comment" placeholder="Write Your Comment Here....."></textarea>
                 <br>
-                <input type="submit" value="Post Comment">
+                <input class="button_dark" type="submit" value="Post Comment">
             </form>
 
 
