@@ -14,6 +14,7 @@ $xml = simplexml_load_file(dirname(__DIR__)."/xml/$mydish.xml");
         <li>
             <h1><?echo $xml->recipe->title;?></h1>
             <p>Make tasty <?echo $mydish;?> with this awesome recipe</p>
+            <p>&nbsp</p>
             <h2>Ingredients (4 persons)</h2>
 
                 <?php
