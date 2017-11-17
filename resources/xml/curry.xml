@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cookbook version="46">
+    <recipe>
+        <title>Chicken Curry</title>
+        <ingredient>
+            <li>4 chicken breasts</li>
+            <li>1 onion</li>
+            <li>1 garlic clove</li>
+            <li>Curry paste</li>
+            <li>Coriander</li>
+            <li>a pinch of salt</li>
+            <li>a pinch of pepper</li>
+        </ingredient>
+        <recipetext>
+            <li>Cut the chicken in pieces and fry them together with the chopped onion, in oil, on high heat, until golden.</li>
+            <li>Lower the temperature a bit and add curry paste, let it fry a little more. Add coriander and garlic.</li>
+            <li>Add the cream and let it be at a temperature almost boiling but not quite for half an hour.</li>
+            <li>Season with salt and pepper.</li>
+        </recipetext>
+        <imagepath>img/content/curry-390550_1920.jpg</imagepath>
+    </recipe>
+
+</cookbook>

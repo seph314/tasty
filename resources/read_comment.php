@@ -13,7 +13,7 @@ $comm = mysqli_query($db,"select * from comment where dish = '$mydish'");
 ?>
 
 <div class="darker">
-        <h3>Comment from <strong><?php echo $name;?></strong><?php echo $time;?></h3>
+        <h3>Comment from <strong><?php echo $name;?>&nbsp</strong><?php echo $time;?></h3>
 <p><?php echo $comment;?></p>
 
     <!-- Adds delete button for comments made by logedin user-->

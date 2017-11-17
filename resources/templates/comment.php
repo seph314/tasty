@@ -25,13 +25,11 @@ include("../resources/post_comment.php");
 <div class="main_content_container">
     <ul class="recipe">
         <li>
-            <h1>Comments</h1>
-            <form  method='post' action="" onsubmit="return post();">
-                <textarea class="comment" name="comment" placeholder="Write Your Comment Here....."></textarea>
-                <br>
-                <input class="button_dark" type="submit" value="Post Comment">
-            </form>
-
+            <?php
+                if(isset($_SESSION['login_user'])) {
+                    require_once(TEMPLATES_PATH . "/make_comment.php");
+                }
+            ?>
 
             <?php
             include("../resources/read_comment.php");

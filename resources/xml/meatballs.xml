@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cookbook version="46">
+    <recipe>
+        <title>Meatballs</title>
+        <ingredient>
+            <li>500g ground beef</li>
+            <li>1 onion</li>
+            <li>1 garlic clove</li>
+            <li>1 egg</li>
+            <li>1dl breadcrumbs</li>
+            <li>a pinch of salt</li>
+            <li>a pinch of pepper</li>
+            <li>1 tablespoon paprika spice mix</li>
+        </ingredient>
+        <recipetext>
+            <li>Pur some water over the breadcrumbs and let it soak in for while. Cut the onion and garlic in small pieces.</li>
+            <li>Now put the ground beef in a bowl and add the egg, onion, garlic, watered breadcrumbs and the spices, salt, pepper, and paprika.</li>
+            <li>Mix it all well together and form them into balls. Fry them on medium high heat in butter and olive oil until done</li>
+        </recipetext>
+        <imagepath>img/content/meatballs-1992354_1920.jpg</imagepath>
+    </recipe>
+
+</cookbook>

@@ -1,7 +1,7 @@
 <?php
-error_reporting(E_ALL & ~E_WARNING);
-
+// error_reporting(E_ALL & ~E_WARNING);
 session_start();
+
     include('connect.php');
 
     $user_check = $_SESSION['login_user'];

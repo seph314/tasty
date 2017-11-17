@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cookbook version="46">
+    <recipe>
+        <title>Pancakes</title>
+        <ingredient>
+            <li>3 eggs</li>
+            <li>4 dl flour</li>
+            <li>8 dl milk</li>
+            <li>1/2 table spoon baking soda</li>
+            <li>1 pinch fresh vanilla</li>
+        </ingredient>
+        <recipetext>
+            <li>Pour all the flour into a bowl, add the eggs and half of the milk. Blend together until no lumps.</li>
+            <li>Mix in the salt, and baking soda. Then add the rest of the flour, let it be for a while.</li>
+            <li>Fry the pancakes in butter on medium high heat.</li>
+        </recipetext>
+        <imagepath>img/content/pancakes-maple-syrup-sweet-407041.jpeg</imagepath>
+    </recipe>
+
+</cookbook>

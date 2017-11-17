@@ -29,7 +29,7 @@
             <div class="dropdown-content">
                 <a href="meatballs.php">Meatballs</a>
                 <a href="pancakes.php">Pancake</a>
-                <a href="curry.php">Chicken Curry</a>
+               <a href="curry.php">Chicken Curry</a>
             </div>
         </li>
         <li>
