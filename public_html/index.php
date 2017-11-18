@@ -1,5 +1,5 @@
 <?php
-// load up your config file
+// load config and session
 require_once("../resources/config.php");
 require_once("../resources/session.php");
 
@@ -11,8 +11,6 @@ if (isset($_SESSION['login_user'])) {
 } else {
     require_once(TEMPLATES_PATH . "/header.php");
 }
-
-
 ?>
 
     <div class="main_content_container">
@@ -27,7 +25,7 @@ if (isset($_SESSION['login_user'])) {
         </ul>
     </div>
 
-
 <?php
+// load footer
 require_once(TEMPLATES_PATH . "/footer.php");
 ?>

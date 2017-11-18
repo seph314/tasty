@@ -1,6 +1,8 @@
 <?php
-// error_reporting(E_ALL & ~E_WARNING);
 session_start();
+
+// kolla om det finns en inloggad användare
+if (isset($_SESSION['login_user'])) {
 
     include('connect.php');
 
@@ -11,9 +13,13 @@ session_start();
     $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
 
     $login_session = $row['username'];
-
-    if (!isset($_SESSION['login_user'])) {
-        header("location:login.php");
-    }
+}
+// annars
+else{
+    header("location:login.php");
+}
 
 ?>
+
+
+

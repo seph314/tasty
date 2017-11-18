@@ -14,13 +14,13 @@ else{
 ?>
 
 <?php
+$_SESSION['dish'] = basename(__FILE__, '.php');
 require_once(TEMPLATES_PATH . "/recept.php");
 ?>
 
 
 
 <?php
-$_SESSION['dish'] = basename(__FILE__, '.php');
 require_once(TEMPLATES_PATH . "/comment.php");
 require_once(TEMPLATES_PATH . "/footer.php");
 ?>

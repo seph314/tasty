@@ -19,16 +19,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // If result matched $myusername and $mypassword, table row must be 1 row
     if($count == 1) {
-        /*
-         * echo $myusername;
-         * funkar så här långt... $myusername innehåller anders
-         */
         $_SESSION['login_user'] = $myusername;
         header("location: ../public_html/index.php");
     }else {
         $error = "Your Login Name or Password is invalid";
     }
-
 }
 ?>
 

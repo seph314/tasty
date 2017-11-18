@@ -15,6 +15,7 @@ else{
 
 
 <?php
+$_SESSION['dish'] = basename(__FILE__, '.php');
 require_once(TEMPLATES_PATH . "/recept.php");
 ?>
 

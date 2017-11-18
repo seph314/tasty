@@ -16,6 +16,7 @@ else{
 
 <?php
 /* loads corresponding recipe for the page */
+$_SESSION['dish'] = basename(__FILE__, '.php');
 require_once(TEMPLATES_PATH . "/recept.php");
 ?>
 
@@ -25,7 +26,6 @@ require_once(TEMPLATES_PATH . "/recept.php");
  * Loads comment section
  * Loads footer
  * */
-$_SESSION['dish'] = basename(__FILE__, '.php');
 require_once(TEMPLATES_PATH . "/comment.php");
 require_once(TEMPLATES_PATH . "/footer.php");
 ?>
