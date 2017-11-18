@@ -4,7 +4,6 @@ require_once("../resources/session.php");
 
 // stores the current pages dish in $mydish and uses it to get the right xml for the recipe
 $mydish = str_replace(".php", "", $_SESSION['dish']);
-echo "här:", $mydish, "hej";
 $xml = simplexml_load_file(dirname(__DIR__)."/xml/$mydish.xml");
 
 

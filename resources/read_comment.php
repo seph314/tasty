@@ -1,8 +1,8 @@
 <?php
-
+// include connect to database, otherwise comments will only show if logged in
+require_once("../resources/connect.php");
 $mydish = $_SESSION['dish'];
 $comm = mysqli_query($db,"select * from comment where dish = '$mydish'");
-
     while($row=mysqli_fetch_array($comm)) {
 
 
@@ -12,9 +12,9 @@ $comm = mysqli_query($db,"select * from comment where dish = '$mydish'");
 
 ?>
 
-<div class="darker">
+        <div class="darker">
         <h3>Comment from <strong><?php echo $name;?>&nbsp</strong><?php echo $time;?></h3>
-<p><?php echo $comment;?></p>
+        <p><?php echo $comment;?></p>
 
     <!-- Adds delete button for comments made by logedin user-->
     <?php
