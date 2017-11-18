@@ -6,7 +6,6 @@ require_once("../resources/session.php");
 $mydish = str_replace(".php", "", $_SESSION['dish']);
 $xml = simplexml_load_file(dirname(__DIR__)."/xml/$mydish.xml");
 
-
 ?>
 
 <div class="main_content_container">
@@ -18,6 +17,7 @@ $xml = simplexml_load_file(dirname(__DIR__)."/xml/$mydish.xml");
             <h2>Ingredients (4 persons)</h2>
 
                 <?php
+                // skriver ut alla ingredienser
                 foreach ($xml->recipe->ingredient->li as $i) {
                     echo "<p>". $i ."</p>";
                 }
@@ -27,6 +27,7 @@ $xml = simplexml_load_file(dirname(__DIR__)."/xml/$mydish.xml");
             <h2>Directions</h2>
             <p>
                 <?php
+                // skriver ut hur man ska göra
                 foreach ($xml->recipe->recipetext->li as $i) {
                     echo "<p>". $i ."</p>";
                 }
