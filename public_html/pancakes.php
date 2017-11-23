@@ -4,7 +4,7 @@ require_once("../resources/config.php");
 require_once("../resources/session.php");
 
 /* checks if you are signed in or not and displays appropriate information */
-if (isset($_SESSION['login_user'])) {
+if(isset($_SESSION['login_user'])) {
     require_once(TEMPLATES_PATH . "/header_signedin.php");
 } else {
     require_once(TEMPLATES_PATH . "/header.php");
@@ -16,6 +16,7 @@ if (isset($_SESSION['login_user'])) {
 <?php
 /* loads corresponding recipe for the page */
 $_SESSION['dish'] = basename(__FILE__, '.php');
+// echo $_SESSION['dish'];
 require_once(TEMPLATES_PATH . "/recept.php");
 ?>
 

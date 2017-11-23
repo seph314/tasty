@@ -6,6 +6,7 @@ require_once("../resources/session.php");
 $mydish = str_replace(".php", "", $_SESSION['dish']);
 $xml = simplexml_load_file(dirname(__DIR__)."/xml/$mydish.xml");
 
+echo $xml;
 ?>
 
 <div class="main_content_container">
