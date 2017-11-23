@@ -20,7 +20,7 @@ else{
                 <div>
                     <ul>
                         <li>
-                            <form action="../resources/newuser.php" method="post">
+                            <form action="../newuser.php" method="post">
                                 <div>
                                     <label><b>Username</b></label>
                                     <b><input type="text" placeholder="Enter Username" name="new_username" required></b>
@@ -39,7 +39,7 @@ else{
     </div>
 
 <?php
-include("../resources/newuser.php");
+include("../newuser.php");
 ?>
 
 <?php
