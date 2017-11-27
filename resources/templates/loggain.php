@@ -1,7 +1,7 @@
 <div>
     <ul class="login">
         <li>
-            <form action="../resources/login.php" method="post">
+            <form action="../login.php" method="post">
                 <div>
                     <label><b>Username</b></label>
                     <b><input type="text" placeholder="Enter Username" name="username" required></b>

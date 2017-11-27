@@ -1,6 +1,10 @@
 
 <?php
-include("../resources/post_comment.php");
+// echo getcwd();
+// ger path:  /Users/Anders/Sites/tasty/public_html
+// jag har kollat så att alla paths stämmer i det här dokumentet, något annat är fel
+
+include("../post_comment.php");
 ?>
 
 <div class="main_content_container">
@@ -8,12 +12,12 @@ include("../resources/post_comment.php");
         <li>
             <?php
                 if(isset($_SESSION['login_user'])) {
-                    require_once(TEMPLATES_PATH . "/make_comment.php");
+                    require_once("../resources/templates/make_comment.php");
                 }
             ?>
 
             <?php
-            include("../resources/read_comment.php");
+            include("../read_comment.php");
             ?>
 
         </li>

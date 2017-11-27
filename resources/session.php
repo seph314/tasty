@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 
 // kolla om det finns en inloggad användare
 if (isset($_SESSION['login_user'])) {

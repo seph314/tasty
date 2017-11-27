@@ -3,9 +3,8 @@
 namespace Model;
 
 /**
- * Class User
- * @package Model
  * Models a user
+ * @package Model
  */
 class User {
     private $username;

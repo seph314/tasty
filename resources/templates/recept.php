@@ -1,6 +1,6 @@
 
 <?php
-require_once("../resources/session.php");
+// require_once("../resources/session.php");
 
 // stores the current pages dish in $mydish and uses it to get the right xml for the recipe
 $mydish = str_replace(".php", "", $_SESSION['dish']);

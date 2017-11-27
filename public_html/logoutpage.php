@@ -1,7 +1,14 @@
 <?php
 // load up your config file
-require_once("../resources/config.php");
-require_once(TEMPLATES_PATH . "/header.php");
+// require_once("../resources/config.php");
+namespace App\Util;
+use Util\Config;
+require_once '../classes/App/Util/Config.php';
+Config::initRequest();
+
+
+
+require_once("../resources/templates/header.php");
 
 ?>
 
@@ -17,5 +24,5 @@ require_once(TEMPLATES_PATH . "/header.php");
 
 
 <?php
-require_once(TEMPLATES_PATH . "/footer.php");
+require_once("../resources/templates/footer.php");
 ?>

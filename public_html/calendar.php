@@ -1,14 +1,20 @@
 <?php
 // load up your config file
-require_once("../resources/config.php");
-require_once("../resources/session.php");
+// require_once("../resources/config.php");
+// require_once("../resources/session.php");
+
+namespace App\Util;
+use Util\Config;
+require_once '../classes/App/Util/Config.php';
+Config::initRequest();
+
 
 //checks if you are signed in or not and displays appropriate information
 if(isset($_SESSION['login_user'])){
-    require_once(TEMPLATES_PATH . "/header_signedin.php");
+    require_once("../resources/templates/header_signedin.php");
 }
 else{
-    require_once(TEMPLATES_PATH . "/header.php");
+    require_once("../resources/templates/header.php");
 }
 
 ?>
@@ -74,5 +80,5 @@ else{
 
 
 <?php
-require_once(TEMPLATES_PATH . "/footer.php");
+require_once("../resources/templates/footer.php");
 ?>

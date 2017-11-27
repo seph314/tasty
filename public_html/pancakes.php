@@ -1,31 +1,28 @@
 <?php
-/*  load up your config file */
-require_once("../resources/config.php");
-require_once("../resources/session.php");
 
-/* checks if you are signed in or not and displays appropriate information */
-if(isset($_SESSION['login_user'])) {
-    require_once(TEMPLATES_PATH . "/header_signedin.php");
+namespace App\Util;
+
+use Util\Config;
+
+require_once '../classes/App/Util/Config.php';
+Config::initRequest();
+
+// checks if you are signed in or not and displays appropriate information
+if (isset($_SESSION['login_user'])) {
+    require_once("../resources/templates/header_signedin.php");
 } else {
-    require_once(TEMPLATES_PATH . "/header.php");
+    require_once("../resources/templates/header.php");
 }
 
-?>
-
-
-<?php
-/* loads corresponding recipe for the page */
+// loads recipe
 $_SESSION['dish'] = basename(__FILE__, '.php');
-// echo $_SESSION['dish'];
-require_once(TEMPLATES_PATH . "/recept.php");
-?>
+require_once("../resources/templates/recept.php");
 
 
-<?php
-/* Get's the name of the dish from te filename
- * Loads comment section
- * Loads footer
- * */
-require_once(TEMPLATES_PATH . "/comment.php");
-require_once(TEMPLATES_PATH . "/footer.php");
+// loads comments
+require_once("../resources/templates/comment.php");
+
+// loads footer
+require_once("../resources/templates/footer.php");
+
 ?>
