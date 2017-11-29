@@ -243,10 +243,18 @@ class UserManager {
      * @return bool|\mysqli_result
      */
     public function readComment($dish) {
+        $db = self::connectToDataBase();
+        $sql = $db->prepare("select * from comment where dish = ?");
+        $sql->bind_param("s", $dish);
+        $sql->execute();
+        return $sql->get_result();
+
+        /* old working code
         // initiatate databse connection
         $db = self::connectToDataBase();
         // return comments
         return mysqli_query($db, "select * from comment where dish = '$dish'");
+        */
     }
 
 
@@ -255,12 +263,22 @@ class UserManager {
      * @return bool|\mysqli_result
      */
     public function deleteComment(Comment $comment){
+        $db = self::connectToDataBase();
+        $id = $comment->getId();
+
+        $sql = $db->prepare("DELETE FROM comment WHERE id = ?");
+        $sql->bind_param("i", $id);
+
+        return $sql->execute();
+
+        /* old working code
         // initiatate databse connection
         $db = self::connectToDataBase();
         $id = $comment->getId();
 
         $sql = "DELETE FROM comment WHERE id = '$id'";
         return $db->query($sql);
+        */
 
 
         /* old code
