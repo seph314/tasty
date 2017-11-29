@@ -76,15 +76,8 @@ class UserManager {
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         $active = $row['active'];
 
-        $count = mysqli_num_rows($result);
+        return $count = mysqli_num_rows($result);
 
-        // If result matched $username and $password, table row must be 1 row
-        if ($count == 1) {
-            $_SESSION['login_user'] = $username;
-            header("location: ../tasty/public_html/index.php");
-        } else {
-            $error = "Your Login Name or Password is invalid";
-        }
     }
 
     /**
@@ -95,7 +88,7 @@ class UserManager {
         //check if login_user is set first, then logout
         if (isset($_SESSION['login_user'])) {
             if (session_destroy()) {
-                header("Location: ../tasty/public_html/index.php");
+                return TRUE;
             }
         }
     }
@@ -150,9 +143,14 @@ class UserManager {
         $id = $comment->getId();
 
         $sql = "DELETE FROM comment WHERE id = '$id'";
+        return $db->query($sql);
 
-        if ($db->query($sql) === TRUE) {
+
+        // TODO Returna SQL query direk (true/false)
+        /*
+         if ($db->query($sql) === TRUE) {
             return "true";
         }
+        */
     }
 }

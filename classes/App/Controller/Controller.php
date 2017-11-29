@@ -43,14 +43,14 @@ class Controller {
      */
     public function loginUser(User $user){
         // calls loginUser in UserManager with $user as parameter.
-        $this->user->loginUser($user);
+        return $this->user->loginUser($user);
     }
 
     /**
      * User logout
      */
     public function logOutUser(){
-        $this->user->logOutUser();
+        return $this->user->logOutUser();
     }
 
     /*

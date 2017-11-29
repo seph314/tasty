@@ -18,7 +18,7 @@ $mydish = $_SESSION['dish'];
 $controller = SessionManager::getController();
 $successful = $controller->deleteComment(new Comment($id, "", "", $mydish, ""));
 
-if ($successful === "true") {
+if ($successful === TRUE) {
     header("location: public_html/$mydish.php");
 } else {
     echo "Delete comment failed";
@@ -27,13 +27,6 @@ if ($successful === "true") {
 SessionManager::storeController($controller);
 
 ?>
-
-
-
-
-
-
-
 
 
 <?php

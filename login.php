@@ -1,6 +1,10 @@
 <?php
+/**
+ *
+ */
 
-namespace App;
+// namespace App;
+namespace App\View;
 
 
 use Controller\SessionManager;
@@ -22,7 +26,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // create controller instance and create a new user through the controller
     $controller = SessionManager::getController();
-    $controller->loginUser(new User($username, $password));
+    $count = $controller->loginUser(new User($username, $password));
+
+    // If result matched $username and $password, table row must be 1 row
+    if ($count == 1) {
+        $_SESSION['login_user'] = $username;
+        header("location: ../tasty/public_html/index.php");
+    } else {
+        echo "Your Login Name or Password is invalid";
+    }
+
     SessionManager::storeController($controller);
 }
 ?>
