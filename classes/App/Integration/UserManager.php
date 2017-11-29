@@ -37,7 +37,7 @@ class UserManager {
      * @param User $user
      */
     public function newUser(User $user) {
-        // initiatate databse connection
+        // initiate database connection
         $db = self::connectToDataBase();
 
         // prepare statment and bind parameters
@@ -86,6 +86,55 @@ class UserManager {
      * @param User $user
      */
     public function loginUser(User $user) {
+
+        // initiate database connection
+        $db = self::connectToDataBase();
+
+        // prepare statment and bind parameters
+        $sql = $db->prepare("SELECT password FROM member WHERE username =?");
+        $sql->bind_param("s", $username);
+
+        // get username and password from the user object
+        $username = $user->getUsername();
+        $password = $user->getPassword();
+
+        $sql->execute();
+        $sql->store_result();
+        $sql->bind_result($encrypted_password);
+        $sql->fetch();
+        $sql->num_rows;
+
+        // login if encrypted password matches user input
+        if (password_verify($password, $encrypted_password)) {
+            return $sql->num_rows;
+        }
+
+            /* tar bort den här delen temporärt och testar om en annan sak funkar
+            // get encrypted password
+            $result_encrypted = mysqli_query($db, $sql_encrypted);
+            $row_encrypted = mysqli_fetch_array($result_encrypted, MYSQLI_ASSOC);
+            $password_encrypted = $row_encrypted['password'];
+
+            // if the SQL command was successful
+            if($sql_encrypted->execute()){
+
+                // login
+                if (password_verify($password, $password_encrypted)){
+
+                    $sql = "SELECT id FROM member WHERE username = '$username'";
+                    $result = mysqli_query($db, $sql);
+                    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+                    $active = $row['active'];
+                    return $count = mysqli_num_rows($result);
+                }
+            */
+        }
+
+
+        // TODO Ska man prepare alla mysqli_query mm eller endast de som hämtar från databasen?
+
+
+        /* working older code 29/11-2017
         // get username and password from the user object
         $username = $user->getUsername();
         $password = $user->getPassword();
@@ -108,8 +157,10 @@ class UserManager {
             $active = $row['active'];
             return $count = mysqli_num_rows($result);
         }
+        */
 
-        /*
+
+        /* even older code
         $sql = "SELECT id FROM member WHERE username = '$username' and password = '$password'";
 
         $result = mysqli_query($db, $sql);
@@ -120,10 +171,12 @@ class UserManager {
         return $count = mysqli_num_rows($result);
         */
 
-    }
+
 
     /**
      * User logout
+     * Den här delen ligger här för att jag vill ha samma mönster i koden
+     * Tänketa att det eventuellt kan bli aktuellt med databasanrop längre fram i tiden
      */
     public function logOutUser() {
 
@@ -144,7 +197,26 @@ class UserManager {
      * @param Comment $comment
      */
     public function postComment(Comment $comment) {
+        // initiate database connection
+        $db = self::connectToDataBase();
 
+        // gather information
+        $name = $comment->getName();
+        $text = $comment->getComment();
+        $dish = $comment->getDish();
+        $time = $comment->getTime();
+
+        // prepare statment and bind parameters
+        $sql = $db->prepare("INSERT INTO comment (name, comment, dish, post_time)
+        VALUES ( ?, ?, ?, ?)");
+        $sql->bind_param("ssss", $name, $text, $dish, $time);
+
+        // return
+        return $sql->execute();
+
+
+
+        /* Gammla koden innan SQL-injection-skydd
         // gather information
         $name = $comment->getName();
         $text = $comment->getComment();
@@ -161,8 +233,11 @@ class UserManager {
         } else {
             echo "Error: " . $sql . "<br>" . $db->error;
         }
+        */
     }
 
+
+    // TODO gör klart readComment och deleteComment SQL-injection-proof
     /**
      * @param $dish
      * @return bool|\mysqli_result
