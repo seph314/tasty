@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\View;
 
 use Controller\SessionManager;
 use Model\Comment;

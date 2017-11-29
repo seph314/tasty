@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\View;
 
 // echo "test1";
 

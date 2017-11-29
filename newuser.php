@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\View;
 
 use Controller\SessionManager;
 use Util\Config;
@@ -17,9 +17,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['new_username'];
     $password = $_POST['new_password'];
 
+    //
+    $encrypted_password = password_hash($password, PASSWORD_BCRYPT);
+
     // create controller instance and create a new user through the controller
     $controller = SessionManager::getController();
-    $controller->newUser(new User($username, $password));
+    $boolean = $controller->newUser(new User($username, $encrypted_password));
+    if ($boolean === TRUE){
+        header("location: ../tasty/public_html/index.php");
+    }
+    else {
+        echo "Something went wrong, we couldn't create your new account.";
+    }
     SessionManager::storeController($controller);
 }
 ?>

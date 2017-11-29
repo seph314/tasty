@@ -34,7 +34,7 @@ class Controller {
      */
     public function newUser(User $user){
         // calls newUser in UserManger with $user as parameter.
-        $this->user->newUser($user);
+        return $this->user->newUser($user);
     }
 
     /**
