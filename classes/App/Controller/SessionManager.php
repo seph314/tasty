@@ -1,12 +1,9 @@
 <?php
 /**
  * Koden i SessionManager kommer direkt från SessionManager-koden i chat-nojs-mvc-php
- * eftersom jag behöver funktionaliteten men inte kommer på något annat sätt att skriva det på.
  */
 
 namespace Controller;
-
-use Controller\Controller;
 
 /**
  * Stores and retrieves session data.

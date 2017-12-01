@@ -1,8 +1,5 @@
 
 <?php
-// echo getcwd();
-// ger path:  /Users/Anders/Sites/tasty/public_html
-// jag har kollat så att alla paths stämmer i det här dokumentet, något annat är fel
 
 include("../post_comment.php");
 ?>

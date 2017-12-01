@@ -1,9 +1,6 @@
 <?php
-// load up your config file
-// require_once("../resources/config.php");
-// require_once("../resources/session.php");
 
-namespace App\Util;
+namespace App\View;
 use Util\Config;
 require_once '../classes/App/Util/Config.php';
 Config::initRequest();

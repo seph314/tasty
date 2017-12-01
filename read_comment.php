@@ -2,34 +2,13 @@
 
 namespace App\View;
 
-// echo "test1";
-
 use Controller\SessionManager;
-use Util\Config;
 
-// prints the current search path
-// echo getcwd();
-
-// require_once 'classes/App/Util/Config.php';
-// Config::initRequest();
-
-// echo "test2";
-
-
-// funkar för att få tag på namnet på maträtten
 $dish = basename($_SERVER['REQUEST_URI'], ".php");
-// $_SESSION['dish'] = basename($_SERVER['REQUEST_URI'], ".php");
 
-// echo "test3";
-// echo $dish;
 //create controller instance and create a new user through the controller
 $controller = SessionManager::getController();
 $comm = $controller->readComment($dish);
-// SessionManager::storeController($controller);
-
-// echo " =echo";
-// echo $dish;
-// echo "test4";
 
 
 while ($row = mysqli_fetch_array($comm)) {
@@ -48,7 +27,6 @@ while ($row = mysqli_fetch_array($comm)) {
         <!-- Lägger till en knapp för att ta bort kommentaren endast om man är inloggad som samma anvädare som skrev kommentaren-->
         <?php
 
-       // echo $_SESSION['login_user'];
         if (isset($_SESSION['login_user'])) {
            if (strtolower($row['name']) == strtolower($_SESSION['login_user'])) {
                 $id = $row['id']; ?>

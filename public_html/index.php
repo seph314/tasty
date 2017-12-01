@@ -1,19 +1,9 @@
 <?php
-// load config and session
-//require_once("../resources/config.php");
-//require_once("../resources/session.php");
 
-// TODO Döp alla namespaces på ett bra sätt
-// TODO Se till att alla delar följer MVC strukturen
-// TODO Implementera säkerhetsfunktioner
-// TODO Improve Performance
-
-namespace App\Util;
+namespace App\View;
 use Util\Config;
 require_once '../classes/App/Util/Config.php';
-// require_once("../resources/config.php");
 Config::initRequest();
-// Config::setup();
 
 
 //checks if you are signed in or not and displays appropriate information

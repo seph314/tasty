@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * OBS Den det här upplägget med initRequest kommer direkt från kursexemplet chat-nojs-MVC
+ */
 namespace Util;
 
 final class Config {
