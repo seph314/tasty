@@ -1,3 +1,4 @@
+/*
 <script type="text/javascript" src="jquery.js">
     <script type="text/javascript">
     function post()
@@ -28,3 +29,4 @@
         return false;
     }
     </script>;
+    */

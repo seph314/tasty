@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+<!-- This is a *view* - HTML markup that defines the appearance of your UI -->
+
+<!-- Display first name and last name -->
+<p>First name: <strong data-bind="text: firstName"></strong></p>
+<p>Last name: <strong data-bind="text: lastName"></strong></p>
+
+<!-- Input first name and last name -->
+<p>First name: <input data-bind="value: firstName" /></p>
+<p>Last name: <input data-bind="value: lastName" /></p>
+
+<!-- Displays full name -->
+<p>Full name: <strong data-bind="text: fullName"></strong></p>
+
+<!-- Capitalize -->
+<button data-bind="click: capitalizeLastName">Go caps</button>
+
+
+
+<script type='text/javascript' src="js/practise.js" >
+
+    // methodcall to appViewModel in practise.js
+    ko.applyBindings = function (appViewModel) {
+    };
+
+</script>
+
+
+
+</body>
+</html>

@@ -82,6 +82,7 @@ class UserManager {
         $sql->bind_result($encrypted_password);
         $sql->fetch();
 
+        // TODO skicka tillbaks krypterat lösenord
         // login if encrypted password matches user input
         if (password_verify($password, $encrypted_password)) {
             return TRUE;
