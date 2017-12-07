@@ -51,7 +51,7 @@ error_reporting(0);
 
 
 <?php
-    include("../resources/templates/loggain-ko.php");
+    include("../resources/templates/loggain.php");
 ?>
 
 

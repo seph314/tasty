@@ -12,7 +12,7 @@ Config::initRequest();
 
 
 
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // store username and password
     $username = $_POST['username'];
@@ -20,20 +20,18 @@ Config::initRequest();
 
     // create controller instance and create a new user through the controller
     $controller = SessionManager::getController();
-    $boolean = $controller->loginUser(new User($username, $password));
+    $encrypted_password = $controller->loginUser(new User($username, $password));
 
     // If result matched $username and $password, table row must be 1 row
-    if ($boolean === TRUE) {
+    if (password_verify($password, $encrypted_password)) {
         $_SESSION['login_user'] = $username;
         header("location: ../tasty/public_html/index.php");
-    } else {
+    }
+    else {
         echo "Your Login Name or Password is invalid";
     }
 
     SessionManager::storeController($controller);
-// }
+}
 ?>
-
-
-
 

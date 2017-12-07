@@ -53,8 +53,6 @@ class UserManager {
         if ($sql->execute()) {
             $_SESSION['login_user'] = $username;
             return TRUE;
-        } else {
-            echo "Error: " . $sql . "<br>" . $db->error;
         }
         $db->close();
     }
@@ -82,18 +80,8 @@ class UserManager {
         $sql->bind_result($encrypted_password);
         $sql->fetch();
 
-        // TODO skicka tillbaks krypterat lösenord
-        // login if encrypted password matches user input
-        if (password_verify($password, $encrypted_password)) {
-            return TRUE;
-        }
-
-
-        }
-
-
-
-
+        return $encrypted_password;
+    }
 
 
     /**
@@ -160,7 +148,7 @@ class UserManager {
      * @param Comment $comment
      * @return bool|\mysqli_result
      */
-    public function deleteComment(Comment $comment){
+    public function deleteComment(Comment $comment) {
         $db = self::connectToDataBase();
         $id = $comment->getId();
         $user = $comment->getName();
