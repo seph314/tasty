@@ -20,6 +20,9 @@ error_reporting(0);
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/nostyle.css">
     <link rel="stylesheet" type="text/css" href="css/comment.css">
+
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
 </head>
 <body>
 
@@ -46,8 +49,9 @@ error_reporting(0);
     </ul>
 </div>
 
+
 <?php
-    include("../resources/templates/loggain.php");
+    include("../resources/templates/loggain-ko.php");
 ?>
 
 

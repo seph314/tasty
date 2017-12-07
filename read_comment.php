@@ -10,7 +10,7 @@ $dish = basename($_SERVER['REQUEST_URI'], ".php");
 $controller = SessionManager::getController();
 $comm = $controller->readComment($dish);
 
-// TODO Lägg till htmlenteties för att säkra HTML output
+// TODO add html entities to further secure the page
 while ($row = mysqli_fetch_array($comm)) {
 
     // lagrar namn, kommentar och tidpunkten från när kommentaren postades
