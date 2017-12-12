@@ -36,20 +36,18 @@ include("../post_comment.php");
             ?>
 
             <!-- ko foreach: {data: retrievedComments, as: 'entry'} -->
-            <div>
-                <p data-bind="text: entry.TS"></p>
-          </div>
+
             <div class='darker'>
 
-                <div>Comment by: <span data-bind="text: entry.name"></span> Time: </div>
+                <div>Comment by: <span data-bind="text: entry.name"></span><span data-bind="text: entry.time"></span></div>
                 <p data-bind="text: entry.comment"></p>
                 <!-- ko if: entry.author -->
-                <button class="button_dark" id='delete' data-bind="click: $parent.deleteComment">Delete</button>
+                <button class="button_dark" data-bind="click: $parent.deleteComment">Delete</button>
                 <!-- /ko -->
             </div>
             <!-- /ko -->
 
-
         </li>
     </ul>
 </div>
+

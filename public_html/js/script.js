@@ -1,4 +1,3 @@
-
 // A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness for you.
 $(document).ready(function () {
 
@@ -18,8 +17,6 @@ $(document).ready(function () {
         self.retrievedComments = ko.observableArray();
         self.activeUser = ko.observable("");
         self.commentText = ko.observable("");
-        self.retrievedComment = ko.observableArray();
-
 
         /**
          * Login a user
@@ -40,21 +37,19 @@ $(document).ready(function () {
         };
 
 
-
         self.getAllComments = function () {
-            alert("getAllComments");
+            // alert("getAllComments");
             $.getJSON("http://localhost/~Anders/tasty/get-username.php",
-                function(jsonUser){
+                function (jsonUser) {
                     self.activeUser = jsonUser;
-                    alert(self.activeUser);
+                    // alert(self.activeUser);
                     $.getJSON("http://localhost/~Anders/tasty/get-comments.php",
-                        function(jsonComments){
+                        function (jsonComments) {
                             //self.getUser();
-                            for (var i = jsonComments.length - 1; i >= 0; i--)
-                            {
+                            for (var i = jsonComments.length - 1; i >= 0; i--) {
                                 var entry = jsonComments[i];
 
-                                if(self.activeUser == jsonComments[i]["name"]){
+                                if (self.activeUser == jsonComments[i]["name"]) {
 
                                     entry.author = true;
                                 }
@@ -68,10 +63,9 @@ $(document).ready(function () {
 
         self.getLatestComments = function () {
             $.getJSON("http://localhost/~Anders/tasty/get-latestcomment.php",
-                function(jsonComment){
+                function (jsonComment) {
                     var exists = false;
-                    for (var i = jsonComment.length - 1; i >= 0; i--)
-                    {
+                    for (var i = jsonComment.length - 1; i >= 0; i--) {
                         var entry = jsonComment[i];
                         self.retrievedComments.push(entry);
                     }
@@ -80,37 +74,44 @@ $(document).ready(function () {
         };
 
 
-
         /**
          * test
          */
-        self.submitComment = function () {
+/*        self.submitComment = function () {
             $.post("http://localhost/~Anders/tasty/post_comment.php",
-                "commentText=" + ko.toJS(self.commentText), function () {
-                    self.emptyCommentField();
-                });
+                "commentText=" + ko.toJS(self.commentText));
+            self.commentText("");
+
             removeComments(updateComments);
-        };
+        };*/
+                self.submitComment = function () {
+                    $.post("http://localhost/~Anders/tasty/post_comment.php",
+                        "commentText=" + ko.toJS(self.commentText), function () {
+                            self.emptyCommentField();
+                            removeComments(updateComments);
+                        });
+                };
 
         /**
          * clears the comment field
          */
-        self.emptyCommentField = function () {
-            self.commentText("");
-        };
+                self.emptyCommentField = function () {
+                    self.commentText("");
+                };
 
         self.deleteComment = function (entry) {
-            //alert("sho");
+            //alert("deleteComment");
             $.post("http://localhost/~Anders/tasty/delete-comment.php",
                 "id=" + ko.toJS(entry.id));
-            /*self.retrievedComments.removeAll();
 
-            self.getAllComments();*/
+            self.retrievedComments.removeAll();
+            self.getAllComments();
+
             removeComments(updateComments);
         };
 
         function removeComments(callback) {
-            self.retrievedComment.removeAll();
+            self.retrievedComments.removeAll();
             callback();
         }
 
@@ -119,7 +120,6 @@ $(document).ready(function () {
         }
 
         self.getAllComments();
-
 
     }
 
