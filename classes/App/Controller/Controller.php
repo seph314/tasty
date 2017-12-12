@@ -15,6 +15,7 @@ class Controller {
 
     private $user;
     private $comment;
+    private $username;
 
     /**
      * New UserManager instance.
@@ -42,7 +43,7 @@ class Controller {
      * @param User $user is the user that wants to log in
      */
     public function loginUser(User $user){
-        // calls loginUser in UserManager with $user as parameter.
+        $this->username = $user->getUsername();
         return $this->user->loginUser($user);
     }
 
@@ -75,6 +76,13 @@ class Controller {
 
     public function deleteComment(Comment $comment){
        return $this->comment->deleteComment($comment);
+    }
+
+    /**
+     * getter for username
+     */
+    public function getUsername(){
+        return $this->username;
     }
 
 

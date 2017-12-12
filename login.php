@@ -12,7 +12,7 @@ Config::initRequest();
 
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+/*if ($_SERVER["REQUEST_METHOD"] == "POST") {*/
 
     // store username and password
     $username = $_POST['username'];
@@ -32,6 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     SessionManager::storeController($controller);
-}
+/*}*/
 ?>
 

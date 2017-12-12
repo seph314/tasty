@@ -9,6 +9,7 @@ error_reporting(0);
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
     <title>Tasty Recipes</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,8 +22,19 @@ error_reporting(0);
     <link rel="stylesheet" type="text/css" href="css/nostyle.css">
     <link rel="stylesheet" type="text/css" href="css/comment.css">
 
-    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/knockout-3.4.2.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../resources/js/knockout-3.4.2.js"></script>
+    <script type='text/javascript' src="../../resources/js/tasty.js" >
+    </script>//-->
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+
+<!--    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>-->
 </head>
 <body>
 

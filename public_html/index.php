@@ -1,7 +1,9 @@
 <?php
 
 namespace App\View;
+
 use Util\Config;
+
 require_once '../classes/App/Util/Config.php';
 Config::initRequest();
 
@@ -13,6 +15,20 @@ if (isset($_SESSION['login_user'])) {
     require_once("../resources/templates/header.php");
 }
 ?>
+
+<!--    <script>
+        $(document).ready(function () {
+            if (!<?php /*echo isset($_SESSION['login_user']) ? 'true' : 'false'; */?>) {
+                alert("session")
+            } else {
+                alert('work')
+                location.href = '../public_html/';
+            }
+
+        });
+    </script>-->
+
+
 
     <div class="main_content_container">
         <ul class="recipe">
@@ -26,7 +42,7 @@ if (isset($_SESSION['login_user'])) {
         </ul>
     </div>
 
-<?php
+    <?php
 // load footer
 require_once("../resources/templates/footer.php");
 ?>

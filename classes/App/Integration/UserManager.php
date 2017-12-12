@@ -57,6 +57,8 @@ class UserManager {
         $db->close();
     }
 
+
+
     /**
      * User login
      * @param User $user
