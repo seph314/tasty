@@ -12,14 +12,15 @@ $(document).ready(function () {
         self.password = ko.observable('');
 
         // used for comments
-        self.msg = ko.observable("eee");
-        self.msgInfo = ko.observable("QACK");
         self.retrievedComments = ko.observableArray();
         self.activeUser = ko.observable("");
         self.commentText = ko.observable("");
 
+
+
         /**
-         * Login a user
+         * Handles user login
+         * (It works and can be activated but I use the old PHP login right now).
          */
         self.sendLogin = function () {
             // Converts the data to plaintext that PHP can read
@@ -37,15 +38,19 @@ $(document).ready(function () {
         };
 
 
+
+        /**
+         * Loads all comments.
+         * Uses get-username.php to get username of loggedin user
+         * Uses get-comments.php to get comments from database
+         * Sets entry.author to true so that we can ad a delete-button on the right comments.
+         */
         self.getAllComments = function () {
-            // alert("getAllComments");
-            $.getJSON("http://localhost/~Anders/tasty/get-username.php",
+            $.getJSON("../get-username.php",
                 function (jsonUser) {
                     self.activeUser = jsonUser;
-                    // alert(self.activeUser);
-                    $.getJSON("http://localhost/~Anders/tasty/get-comments.php",
+                    $.getJSON("../get-comments.php",
                         function (jsonComments) {
-                            //self.getUser();
                             for (var i = jsonComments.length - 1; i >= 0; i--) {
                                 var entry = jsonComments[i];
 
@@ -61,52 +66,37 @@ $(document).ready(function () {
             );
         };
 
-        self.getLatestComments = function () {
-            $.getJSON("http://localhost/~Anders/tasty/get-latestcomment.php",
-                function (jsonComment) {
-                    var exists = false;
-                    for (var i = jsonComment.length - 1; i >= 0; i--) {
-                        var entry = jsonComment[i];
-                        self.retrievedComments.push(entry);
-                    }
-                }
-            );
+
+        /**
+         * Handles new comments
+         * Uses post_comment.php to connect to database
+         */
+        self.submitComment = function () {
+            $.post("../post_comment.php",
+                "commentText=" + ko.toJS(self.commentText), function () {
+                    self.emptyCommentField();
+                    removeComments(updateComments);
+                });
         };
 
 
         /**
-         * test
-         */
-/*        self.submitComment = function () {
-            $.post("http://localhost/~Anders/tasty/post_comment.php",
-                "commentText=" + ko.toJS(self.commentText));
-            self.commentText("");
-
-            removeComments(updateComments);
-        };*/
-                self.submitComment = function () {
-                    $.post("http://localhost/~Anders/tasty/post_comment.php",
-                        "commentText=" + ko.toJS(self.commentText), function () {
-                            self.emptyCommentField();
-                            removeComments(updateComments);
-                        });
-                };
-
-        /**
          * clears the comment field
          */
-                self.emptyCommentField = function () {
-                    self.commentText("");
-                };
+        self.emptyCommentField = function () {
+            self.commentText("");
+        };
 
+
+        /**
+         * Delets a comment
+         * @param entry
+         */
         self.deleteComment = function (entry) {
-            //alert("deleteComment");
-            $.post("http://localhost/~Anders/tasty/delete-comment.php",
+            $.post("../delete-comment.php",
                 "id=" + ko.toJS(entry.id));
-
-            self.retrievedComments.removeAll();
-            self.getAllComments();
-
+            /*self.retrievedComments.removeAll();
+           self.getAllComments();*/
             removeComments(updateComments);
         };
 
