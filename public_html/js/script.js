@@ -114,6 +114,6 @@ $(document).ready(function () {
     }
 
     // Activates knockout.js
-    ko.applyBindings(new AppViewModel(), document.getElementById('commentsdiv'));
+    ko.applyBindings(new AppViewModel());
 
 });

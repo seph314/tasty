@@ -5,7 +5,7 @@
 <!-- <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script> -->
 
-<div class="main_content_container" id="commentsdiv">
+<div class="main_content_container">
     <ul class="recipe">
         <li>
             <?php
@@ -32,7 +32,7 @@
                 <!-- /ko -->
             </div>
             <!-- /ko -->
-            <script type='text/javascript' src="http://localhost/~Anders/tasty/public_html/js/script.js"></script>
+            <script type='text/javascript' src="/~Anders/tasty/public_html/js/script.js"></script>
         </li>
     </ul>
 </div>
