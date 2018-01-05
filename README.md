@@ -1,5 +1,4 @@
 # andpet52.github.io
 
-### Applikationer för internet - ID1350
-
-I make this project to help learn html, css, php och js.
+### School project - Tasy Recipes
+This is a recipe site called Tasy Recipes. It has a backend created with PHP, and a fronend created with HTML, CSS and JavaScript. This project is built with the MVVM architecture, the serverside has a Model, View and Controller and the frontend has a ViewModel that handles the commentsection and then mirror the information to the server. I ran this project on a local apache server with a MySQL database.
