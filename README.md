@@ -7,4 +7,4 @@ This is a recipe site called Tasy Recipes. It has a backend created with PHP, an
 ![alt pageDemo](https://github.com/seph314/tasty/blob/master/public_html/img/git/screenshot.png)
 
 ## Demo - Responsive
-![alt pageDemo](https://github.com/seph314/tasty/blob/master/public_html/img/git/resonsive.png)
+![alt pageDemo](https://github.com/seph314/tasty/blob/master/public_html/img/git/responsive.png)
